@@ -2,6 +2,9 @@ body {
     min-width: 447px;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #272B2A;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -9,6 +12,7 @@ body {
 header {
     background: linear-gradient(#3B3939, #272424);
     height: 100%;
+    margin-top: 1%;
     display: flex;
     flex-flow: column;
     border-top: solid;
@@ -25,9 +29,9 @@ header {
 
 
 
-header > h1 {
+#header > h1 {
     font-family: "Sacramento", sans-serif;
-    font-size: 250%;
+    font-size: 350%;
     
     padding: 1%;
     text-align: center;
@@ -43,83 +47,132 @@ header > h1 {
       0 0 100px #fb00ff;
 }
 
-header > form {
+header > #form {
+    display: flex;
+    align-items: center;
+    max-width: 100vh;
     color: #fff;
     margin-bottom: 10px;
     background-color: #272424;
     padding: 1%;
-    margin-right: 21%;
     border-bottom: black inset;
     border-top: black inset;
     border-right: black inset;
 }
 
+#form > form{
+    width: 70%;
+}
 
+.button {
+    border-radius: 50px;
+    padding: 4px;
+    background-color: #272424;
+    color: #fff;
+}
 
-.SoftOrNo {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+#form > a {
+    text-decoration: none;
+    margin-left: 12%;
+    border: 2px #ffd000 outset;
+    background-color: #272424;
+    color: #ffd000;
+    padding: 5px;
+}
+
+#form > a:hover {
+    background-color: #fff;
     
 }
 
-.SoftOrNo_2 {
-    background-color: #3B3939;
-    width: 60%;
+#header {
     display: flex;
-    border-bottom: black inset;
-    border-top: black inset;
-    border-left: black inset;
-    box-shadow: 10px 10px 39px black;
-    flex-direction: row;
     justify-content: center;
-    gap: 20%;
+    align-items: center;
 }
 
-.SoftOrNo_2 > button {
-
-    margin-top: 5px;
-    margin-bottom: 5px;
-    
+#header > img {
+    width: 9%;
+    animation: animation 3s infinite;
 }
 
+
+@keyframes animation {
+    0%
+    {
+        rotate: 20deg;
+    }
+    50%
+    {
+        rotate: -20deg;
+    }
+    100%
+    {
+        rotate: 20deg;
+    }
+}
+
+
+.line_1 {
+    display: flex;
+    gap : 10px;
+    width: 100%;
+}
 .cocktail_liste {
     background-color: aliceblue;
     border: 2px solid;
-    margin-top: 4%;
+    margin-top: 2%;
     margin-left: 2%;
     margin-right: 2%;
     
 }
 
-#mojito {
-    background-color: #fff;
+.cocktail {
+    
+    margin-top: 10px;
     margin: 2;
     display: flex;
     flex-flow: column;
+    justify-content: space-between;
     align-items: center;
-    width: 100px;
+    width: 180px;
+    height: 240px;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 9px;
     padding-bottom: 5px;
     border: 2px solid;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
-#mojito > img {
+a > img {
+    margin-top: 5px;
     width: 100%;
-}
-
-#mojito > p {
-    margin-bottom: 5px;
+    
+    border: 2px black solid;
 }
 
 a {
-    padding: 5px;
-    margin-top: 5px;
+    font-size: 110%;
+    font-weight: bold;
     text-decoration: none;
-    background-color: #01FFFD;
-    border: 1px solid black;
+    color: #272424;
+    text-align: center;
+}
+
+#mojito:hover {
+    width: 200px;
+    height: 250px;
+}
+
+#sex_on_the_beach:hover {
+    width: 200px;
+    height: 250px;
 }
 
 
@@ -130,68 +183,5 @@ a {
 
 
 
-header > span{
-    position: absolute;
-    width: 100%;
-    display: block;
-    box-sizing: border-box;
-    
-}
 
 
-
-header span:nth-child()
-{
-  transform:rotate(180deg);
-}
-
-header span:nth-child(1)
-{
-    transform: rotate(180deg);
-}
-
-
-
-header span:before
-{
-  content: '';
-  position: absolute;
-  width:100%;
-  
-  height: 2px;
-  background: #fff
-  ;
-  animation: animate 3s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-  transform:scaleX(0);
-  transform-origin: left;
-  background: #fff
-  }
-  50%
-  {
-    background-color: #E419F4;
-    transform:scaleX(1);
-  transform-origin: left;
-  
-  }
-  50.1%
-  {
-    transform:scaleX(1);
-  transform-origin: right;
-    
-  }
-  
-  100%
-  {
-    background-color: #C401F7;
-    transform:scaleX(0);
-  transform-origin: right;
-  
-    
-  }
-  
-  
-} 

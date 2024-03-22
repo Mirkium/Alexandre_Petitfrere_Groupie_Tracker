@@ -12,35 +12,46 @@
     </head>
     <body>
         <header>
-            <span ></span>
-            <h1>World Cocktail </h1>
+            <div id="header">
+                <img src="../assets/img/cocktail.png" alt="">
+                <h1>World Cocktail </h1>
+                <img src="../assets/img/cocktail.png" alt="">
+            </div>
 
+            <div id="form">
                 <form action="/rechercher" method="GET">
-                    <label for="search">Recherche:</label>
+                    <label for="search">Search :</label>
                     <input type="text" id="search" name="q">
-                    <input type="submit" value="Rechercher">
+                    <input type="submit" value="Search" class="button">
                 </form>
-
+                <a href="Accueil.html">Favorite</a>
+            </div>
         </header>
 
-        <div class="SoftOrNo">
-            <div class="SoftOrNo_2">
-                <button>Alcool</button>
-                <button>Sans Alcool</button>
-            </div>
-        </div>
+    
 
         <div class="cocktail_liste">
             
-            <div id="mojito">
-                <img src="../assets/img/mojito.png" alt="">
-                <p>Mojito</p>
-                <p>Alcool</p>
+            <div class="line_1">
+                <div class="cocktail" id="mojito">
+                    <a href="Cocktail.html">
+
+                        <img src="https://www.thecocktaildb.com/images/media/drink/metwgh1606770327.jpg">
+                        <p>Mojito</p>
+                    </a>
+        
+                </div>
     
-                <a href="Cocktail.html">Recette</a>
+                <div class="cocktail" id="sex_on_the_beach">
+                    <a href="Cocktail.html">
+
+                        <img src="https://www.thecocktaildb.com/images/media/drink/fi67641668420787.jpg">
+                        <p>Sex on the beach</p>
+                    </a>
+                </div>
             </div>
         </div>
         
-        <script src="" async defer></script>
+        
     </body>
 </html>
