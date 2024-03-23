@@ -130,7 +130,9 @@ header > #form {
     
 }
 
+/*===================================================*/
 
+/*==================COEUR_PAGE=======================*/
 
 .line_1 {
     display: flex;
@@ -147,7 +149,7 @@ header > #form {
 }
 
 .cocktail {
-    
+    background-color: #fff;
     margin-top: 10px;
     margin: 2;
     display: flex;
@@ -178,6 +180,36 @@ a {
     color: #272424;
     text-align: center;
 }
+
+.cocktail_liste > p {
+    margin-left: 2%;
+}
+.categorie {
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: #3B3939;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px black inset;
+    box-shadow: 0 0 20px #fff,
+    0 0 2px #fff,
+    0 0 10px #bc13fe,
+    0 0 20px #bc13fe,
+    0 0 20px #bc13fe,
+    inset 0 0 2px #bc13fe;;
+}
+
+button {
+    margin: 1%;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #ffd000;
+}
+
 
 #mojito:hover {
     width: 200px;
