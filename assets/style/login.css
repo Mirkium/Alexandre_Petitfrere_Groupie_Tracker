@@ -149,6 +149,7 @@ input {
     display: flex;
     flex-flow: column;
     text-align: center;
+    align-items: center;
 }
 
 .login > form {
@@ -157,4 +158,33 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10%;
+    color: #fff;
+    background-color: #3B3939;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    min-width: 75%;
+    
+}
+
+a:hover {
+    background-color: #fff;
+    color: black;
+    border-color: #fff;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;;
 }
