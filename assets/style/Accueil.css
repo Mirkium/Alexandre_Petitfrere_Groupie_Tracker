@@ -47,6 +47,45 @@ header {
       0 0 100px #fb00ff;
 }
 
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_cocktail {
+    width: 9%;
+    animation: animation 3s infinite;
+}
+
+
+@keyframes animation {
+    0%
+    {
+        rotate: 20deg;
+    }
+    50%
+    {
+        rotate: -20deg;
+    }
+    100%
+    {
+        rotate: 20deg;
+    }
+}
+
+#vodka {
+    width: 15%;
+    animation: vodka 3s infinite;
+}
+
+@keyframes vodka {
+    50%
+    {
+        rotate: -360deg;
+    }
+}
+
 header > #form {
     display: flex;
     align-items: center;
@@ -63,6 +102,7 @@ header > #form {
 #form > form{
     width: 70%;
 }
+
 
 .button {
     border-radius: 50px;
@@ -90,32 +130,6 @@ header > #form {
     
 }
 
-#header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#header > img {
-    width: 9%;
-    animation: animation 3s infinite;
-}
-
-
-@keyframes animation {
-    0%
-    {
-        rotate: 20deg;
-    }
-    50%
-    {
-        rotate: -20deg;
-    }
-    100%
-    {
-        rotate: 20deg;
-    }
-}
 
 
 .line_1 {

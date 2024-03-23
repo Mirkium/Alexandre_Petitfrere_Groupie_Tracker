@@ -7,7 +7,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../assets/style/Cocktail.css">
+        <link rel="stylesheet" href="../assets/style/login.css">
         <link href='https://fonts.googleapis.com/css?family=Sacramento:400' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -17,16 +17,21 @@
                 <h1>World Cocktail </h1>
                 <img src="../assets/img/vodka.webp" alt="" id="vodka">
             </div>
-
-            <div id="form">
-                <form action="/rechercher" method="GET">
-                    <label for="search">Search :</label>
-                    <input type="text" id="search" name="q">
-                    <input type="submit" value="Search" class="button">
-                </form>
-                <a href="Accueil.html">Favorite</a>
-            </div>
         </header>
+
+        <div class="support">
+            <div class="create">
+                <p>Create Accompt</p>
+                <form action="/enregistrement">
+                    <label for="Name"> Name :</label>
+                    <input type="text" id="Name">
+                    <label for="password">Password :</label>
+                    <input type="password" id="password">
+                    <input type="submit" value="CREATE" class="button">
+                </form>
+            </div>
+        </div>
+    
         
         <script src="" async defer></script>
     </body>
