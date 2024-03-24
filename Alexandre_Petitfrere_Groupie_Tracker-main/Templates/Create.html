@@ -1,0 +1,38 @@
+{{define "Create"}}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../assets/style/login.css">
+        <link href='https://fonts.googleapis.com/css?family=Sacramento:400' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <div id="header">
+                <img src="/assets/img/cocktail.png" alt="" id="logo_cocktail">
+                <h1>World Cocktail </h1>
+                <img src="/assets/img/vodka.webp" alt="" id="vodka">
+            </div>
+        </header>
+
+        <div class="support">
+            <div class="create">
+                <p>Create Accompt</p>
+                <form action="/enregistrement" method="POST">
+                    <p class="error">{{.Err}}</p>
+                    <label for="Name"> Name :</label>
+                    <input type="text" id="Name" name="name" required>
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="password" required>
+                    <input type="submit" value="CREATE" class="button">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+{{end}}

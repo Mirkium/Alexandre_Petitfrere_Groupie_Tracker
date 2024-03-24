@@ -1,0 +1,190 @@
+body {
+    min-width: 447px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272B2A;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(#3B3939, #272424);
+    height: 100%;
+    margin-top: 1%;
+    display: flex;
+    flex-flow: column;
+    border-top: solid;
+    border-bottom: solid black;
+    box-shadow: 0 0 0px #fff,
+            0 0 0px #fff,
+            0 0 0px #bc13fe,
+            0 0 0px #bc13fe,
+            0 0 5rem #bc13fe,
+            inset 0 0 0px #bc13fe;
+}
+
+
+
+
+
+#header > h1 {
+    font-family: "Sacramento", sans-serif;
+    font-size: 350%;
+    
+    padding: 1%;
+    text-align: center;
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 4px #fb00ff,
+      0 0 8px #fb00ff,
+      0 0 9px #fb00ff,
+      0 0 30px #fb00ff,
+      0 0 100px #fb00ff;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_cocktail {
+    width: 9%;
+    animation: animation 3s infinite;
+}
+
+
+@keyframes animation {
+    0%
+    {
+        rotate: 20deg;
+    }
+    50%
+    {
+        rotate: -20deg;
+    }
+    100%
+    {
+        rotate: 20deg;
+    }
+}
+
+#vodka {
+    width: 15%;
+    animation: vodka 3s infinite;
+}
+
+@keyframes vodka {
+    50%
+    {
+        rotate: -360deg;
+    }
+}
+
+/*================================Page=============================*/
+
+
+.support {
+    display: flex;
+    justify-content: center;
+    background-color: #272B2A;
+    min-width: 50vh;
+    border: 2px black inset;
+    margin-top: 10%;
+    box-shadow: 5px 5px 20px black;
+}
+
+.create {
+    color: #fff;
+    font-size: 120%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+
+.create > form {
+    margin-top: 2%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.button {
+    background-color: #272424;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 20px;
+    border: 3px black solid;
+}
+.button:hover {
+    background-color: #fff;
+    color: black;
+    border-color: #fff;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;;
+}
+
+
+.login {
+    color: #fff;
+    font-size: 120%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+}
+
+.login > form {
+    margin-top: 2%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 10%;
+    color: #fff;
+    background-color: #3B3939;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    min-width: 75%;
+    
+}
+
+a:hover {
+    background-color: #fff;
+    color: black;
+    border-color: #fff;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;;
+}

@@ -1,0 +1,136 @@
+body {
+    min-width: 447px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #272B2A;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(#3B3939, #272424);
+    height: 100%;
+    margin-top: 1%;
+    display: flex;
+    flex-flow: column;
+    border-top: solid;
+    border-bottom: solid black;
+    box-shadow: 0 0 0px #fff,
+            0 0 0px #fff,
+            0 0 0px #bc13fe,
+            0 0 0px #bc13fe,
+            0 0 5rem #bc13fe,
+            inset 0 0 0px #bc13fe;
+}
+
+
+
+
+
+
+#header > h1 {
+    font-family: "Sacramento", sans-serif;
+    font-size: 350%;
+    
+    padding: 1%;
+    text-align: center;
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 4px #fb00ff,
+      0 0 8px #fb00ff,
+      0 0 9px #fb00ff,
+      0 0 30px #fb00ff,
+      0 0 100px #fb00ff;
+}
+
+header > #form {
+    display: flex;
+    align-items: center;
+    max-width: 100vh;
+    color: #fff;
+    margin-bottom: 10px;
+    background-color: #272424;
+    padding: 1%;
+    border-bottom: black inset;
+    border-top: black inset;
+    border-right: black inset;
+}
+
+#form > form{
+    width: 70%;
+}
+
+.button {
+    border-radius: 50px;
+    padding: 4px;
+    background-color: #272424;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+#form > a {
+    text-decoration: none;
+    margin-left: 12%;
+    border: 2px #ffd000 outset;
+    background-color: #272424;
+    color: #ffd000;
+    padding: 5px;
+}
+
+#form > a:hover {
+    background-color: #fff;
+    
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_cocktail {
+    width: 9%;
+    animation: animation 3s infinite;
+}
+
+
+@keyframes animation {
+    0%
+    {
+        rotate: 20deg;
+    }
+    50%
+    {
+        rotate: -20deg;
+    }
+    100%
+    {
+        rotate: 20deg;
+    }
+}
+
+#vodka {
+    width: 15%;
+    animation: vodka 3s infinite;
+}
+
+@keyframes vodka {
+    50%
+    {
+        rotate: -360deg;
+    }
+}

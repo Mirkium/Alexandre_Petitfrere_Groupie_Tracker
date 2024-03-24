@@ -1,0 +1,15 @@
+body {
+    font-family: "Sacramento", sans-serif;
+}
+
+p {
+    text-shadow:
+      0 0 7px #fff,
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 4px #fb00ff,
+      0 0 8px #fb00ff,
+      0 0 9px #fb00ff,
+      0 0 30px #fb00ff,
+      0 0 100px #fb00ff;
+}
